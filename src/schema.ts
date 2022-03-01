@@ -15,12 +15,15 @@ type Post{
   body: String!
   published: Boolean!
   author: Float!
-  comments: [Comment]
+  comments: [Comment]!
+  user: User!
 }
 type Comment {
   id: String!
   text: String!
   author: Float!
+  user: User!
+  post: Post!
 }
 
 type Query {

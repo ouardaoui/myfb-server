@@ -7,6 +7,7 @@ export const User = {
   },
   posts(parent: any, args: any, { data: { posts } }: any, info: any) {
     return posts.filter((post: any) => {
+
       return post.author === parent.id
     })
   }

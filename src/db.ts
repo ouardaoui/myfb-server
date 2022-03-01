@@ -52,7 +52,7 @@ const comments = [{
   text: " i really like arabic music i found it fantastic",
   author: 3,
   post: "P1"
-}, , {
+}, {
   id: "C3",
   text: "it s sunny let s go to beach",
   author: 1,

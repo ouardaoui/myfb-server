@@ -7,7 +7,7 @@ export const Query = {
       return user.name.toLowerCase().includes(args.query.toLowerCase())
     })
   },
-  posts(parent: any, { query }: any, { data: { posts } }: any, info: any) {
+  posts(parent: unknown, { query }: unknown, { data: { posts } }: unknown, info: unknown) {
     const post = posts.filter((post: any) => {
       if (query) {
         const matchtitle = post.title.toLowerCase().includes(query)

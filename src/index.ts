@@ -4,6 +4,7 @@ import { typeDefs } from "./schema";
 import { Query } from "./resolvers/Query";
 import { User } from "./resolvers/User";
 import { Post } from "./resolvers/Post";
+import { Comment } from "./resolvers/Comment"
 const context = {
   data,
 }
@@ -11,6 +12,7 @@ const context = {
 const resolvers = {
   Query,
   User,
+  Comment,
   Post
 }
 
